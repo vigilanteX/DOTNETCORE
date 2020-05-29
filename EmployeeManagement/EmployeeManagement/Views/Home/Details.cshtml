@@ -1,0 +1,11 @@
+﻿@model Homedetail
+
+    <div style="border:2px dotted">
+        <h1>Detail </h1>
+        <h2> @Model.Emp.Department</h2>
+        <h2>@Model.Emp.Id</h2>
+        <h2>@Model.Emp.Name</h2>
+        <h2>@Model.Emp.Email</h2>
+        <a asp-controller="Home" asp-action="Index" style="color:red;background-color:black">BACK</a>
+    </div>
+

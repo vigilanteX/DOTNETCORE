@@ -1,0 +1,23 @@
+﻿@model Employee
+
+    <form asp-controller="Home" asp-action="Update">
+
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+        <span asp-validation-for="Name"></span>
+
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email"></span>
+
+
+        <label asp-for="Department"></label>
+        <select asp-for="Department" asp-items="Html.GetEnumSelectList<Dept>()">
+            <option value="">Please Provide Value</option>
+        </select>
+        <span asp-validation-for="Department"></span>
+
+        <input type="submit" />
+
+
+    </form>

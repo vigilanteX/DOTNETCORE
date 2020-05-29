@@ -1,0 +1,34 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <pre>
+    <a asp-controller="Account" asp-action="Register">Register New User</a>
+    <a asp-controller="Account" asp-action="Login">Login </a>
+    <a asp-controller="Account" asp-action="SignOut">LogOut </a>
+</pre>
+
+    <div>
+
+        <a asp-controller="Home" asp-action="Employeebyid">EmployeeByID</a>
+        <a asp-controller="Home" asp-action="Create">Create</a>
+        <a asp-controller="Home" asp-action="Delete">Delete</a>
+        <a asp-controller="Home" asp-action="update">Update</a>
+
+
+
+
+    </div>
+
+
+
+    <div class="container">
+        @RenderBody()
+    </div>
+    <script src="~/hello.js"></script>
+</body>
+</html>
+
+
+
