@@ -32,9 +32,9 @@ namespace EmployeeManagement.Controllers
             var exceptionHandlerPathFeature =
                HttpContext.Features.Get<IExceptionHandlerPathFeature>();
 
-            // ViewBag.ExceptionPath = exceptionHandlerPathFeature.Path;
-            //ViewBag.ExceptionMessage = exceptionHandlerPathFeature.Error.Message;
-            //ViewBag.StackTrace = exceptionHandlerPathFeature.Error.StackTrace;
+             ViewBag.ExceptionPath = exceptionHandlerPathFeature.Path;
+            ViewBag.ExceptionMessage = exceptionHandlerPathFeature.Error.Message;
+            ViewBag.StackTrace = exceptionHandlerPathFeature.Error.StackTrace;
 
             ilogger.LogError("Error Message");
 
@@ -44,7 +44,5 @@ namespace EmployeeManagement.Controllers
 
     }
 
-    public class Ilogger
-    {
-    }
+  
 }
