@@ -3,7 +3,19 @@ pipeline {
   stages {
     stage('DEV') {
       steps {
-        powershell 'Write-Host "Aman"'
+        echo 'DEV BUILD STARTED'
+      }
+    }
+
+    stage('SIT') {
+      steps {
+        echo 'SIT BUILD STARTED'
+      }
+    }
+
+    stage('UAT') {
+      steps {
+        echo 'UAT BUILD STARTED'
       }
     }
 
